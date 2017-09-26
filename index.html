@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Reserved</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="theme-color" content="#282c2f">
+
+  <!--build:css _blocks/styles.min.css-->
+  <link rel="stylesheet" href="_blocks/normalize/normalize.css">
+  <link rel="stylesheet" href="_blocks/mmenu/mmenu.css">
+  <link rel="stylesheet" href="_blocks/magnific-popup/magnific-popup.css">
+  <link rel="stylesheet" href="_blocks/hamburgers/hamburgers.css">
+  <link rel="stylesheet" href="_blocks/intTelInput/intTelInput.css">
+  <link rel="stylesheet" href="_blocks/initialization/initialization.css">
+  <link rel="stylesheet" href="_blocks/box-sizing/box-sizing.css">
+  <link rel="stylesheet" href="_blocks/wrapper/wrapper.css">
+  <link rel="stylesheet" href="_blocks/holder/holder.css">
+  <link rel="stylesheet" href="_blocks/background/background.css">
+  <link rel="stylesheet" href="_blocks/fonts/fonts.css">
+  <link rel="stylesheet" href="_blocks/text/text.css">
+  <link rel="stylesheet" href="_blocks/header/header.css">
+  <link rel="stylesheet" href="_blocks/search-authentication/search-authentication.css">
+  <link rel="stylesheet" href="_blocks/login-form/login-form.css">
+  <link rel="stylesheet" href="_blocks/reg-form/reg-form.css">
+  <link rel="stylesheet" href="_blocks/forgot-password/forgot-password.css">
+  <link rel="stylesheet" href="_blocks/phone/phone.css">
+  <link rel="stylesheet" href="_blocks/callback/callback.css">
+  <link rel="stylesheet" href="_blocks/basket/basket.css">
+  <link rel="stylesheet" href="_blocks/navigation-horizontal/navigation-horizontal.css">
+  <link rel="stylesheet" href="_blocks/choose-menu/choose-menu.css">
+  <link rel="stylesheet" href="_blocks/mobile-menu/mobile-menu.css">
+  <link rel="stylesheet" href="_blocks/main-and-aside/main-and-aside.css">
+  <link rel="stylesheet" href="_blocks/aside/aside.css">
+  <link rel="stylesheet" href="_blocks/hot/hot.css">
+  <link rel="stylesheet" href="_blocks/best-deals/best-deals.css">
+  <link rel="stylesheet" href="_blocks/description/description.css">
+  <link rel="stylesheet" href="_blocks/main-content-title/main-content-title.css">
+  <link rel="stylesheet" href="_blocks/search-result/search-result.css">
+  <link rel="stylesheet" href="_blocks/filter/filter.css">
+  <link rel="stylesheet" href="_blocks/change-view/change-view.css">
+  <link rel="stylesheet" href="_blocks/offer/offer.css">
+  <link rel="stylesheet" href="_blocks/rating/rating.css">
+  <link rel="stylesheet" href="_blocks/footer/footer.css">
+  <link rel="stylesheet" href="_blocks/social/social.css">
+  <link rel="stylesheet" href="_blocks/wezom/wezom.css">
+  <!--endbuild-->
+</head>
+
+
+<body>
+  <!-- Page content -->
+  <div class="wrapper wrapper__page background text">
+    <!-- Header -->
+    <header class="header">
+      <div class="header__shadow"></div>
+      <div class="header__content">
+        <!-- Mobile menu icon -->
+        <div class="header__mobile-menu">
+          <button id="mobile-menu__icon" class="mobile-menu__icon hamburger hamburger--collapse" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        </div>
+        <!-- Search and Authentication -->
+        <div class="header__search-authentication-wrapper">
+          <div class="header__search-authentication search-authentication">
+            <!-- Search -->
+            <div class="search-authentication__search-box">
+              <form>
+                <input type="search" name="search-field" placeholder="Поиск" class="search-authentication__search-field">
+                <input type="submit" name="search-submit" value="" class="search-authentication__search-submit">
+              </form>
+            </div>
+            <!-- Authentication -->
+            <div class="search-authentication__authentication-box">
+              <!-- Login -->
+              <div class="search-authentication__login-box">
+                <img src="_blocks/search-authentication/login-icon.png" alt="login">
+                <a href="#login-form" class="search-authentication__authentication-text search-authentication__login">Вход</a>
+                <!-- Login form -->
+                <div class="login-form mfp-hide" id="login-form">
+                  <form class="login-form__form" name="login-form">
+                    <p class="login-form__title">Вход</p>
+                    <input type="text" placeholder="Имя пользователя" class="login-form__input login-form__user" />
+                    <div class="login-form__error-user"></div>
+                    <input type="password" placeholder="Пароль" class="login-form__input login-form__password" />
+                    <div class="login-form__error-password"></div>
+                    <a class="login-form__forgot-password forgot-password__link">Забыли пароль?</a>
+                    <input type="submit" class="login-form__confirm-button" value="Войти">
+                  </form>
+                  <!-- Remember password -->
+                  <form class="forgot-password" action="">
+                    <a class="forgot-password__back-arrow">&larr;</a>
+                    <div class="forgot-password__title">Востановление пароля</div>
+                    <input type="text" placeholder="Введите email" class="forgot-password__input" />
+                    <div class="forgot-password__error"></div>
+                    <input type="submit" class="forgot-password__confirm-button" value="Подтвердить">
+                    <div class="forgot-password__message">Письмо с паролем отправленно на почту</div>
+                  </form>
+                </div>
+              </div>
+              <!-- Registration -->
+              <div class="search-authentication__reg-box">
+                <img src="_blocks/search-authentication/reg-icon.png" alt="login">
+                <a href="#reg-form" class="search-authentication__authentication-text search-authentication__reg">Регистрация</a>
+                <!-- Registration form -->
+                <div class="reg-form mfp-hide" id="reg-form">
+                  <form class="reg-form__form" name="reg-form">
+                    <p class="reg-form__title">Регистрация</p>
+                    <input type="text" placeholder="Имя пользователя" class="reg-form__input reg-form__user" />
+                    <div class="reg-form__error-user"></div>
+                    <input type="text" placeholder="Email" class="reg-form__input reg-form__email" />
+                    <div class="reg-form__error-email"></div>
+                    <input type="password" placeholder="Пароль" class="reg-form__input reg-form__password" />
+                    <div class="reg-form__error-password"></div>
+                    <input type="password" placeholder="Повторите пароль" class="reg-form__input reg-form__repeat-password" />
+                    <div class="reg-form__error-repeat-password"></div>
+                    <input type="submit" class="reg-form__confirm-button" value="Зарегистрироваться">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Title -->
+        <div class="header__title">
+          <img src="_blocks/header/reserved-logo.png" alt="reserved logo">
+          <br>
+          <span>Заказ и доставка еды из ресторанов</span>
+        </div>
+        <!-- Phone -->
+        <div class="header__phone phone">
+          <img src="_blocks/phone/phone-icon.png" alt="phone icon" class="phone__icon">
+          <div class="phone__number">050 786-86-86</div>
+          <button href="#callback" type="button" name="button" class="phone__button">
+              <span>Заказать звонок</span>
+            </button>
+          <!-- Callback -->
+          <form class="callback mfp-hide" id="callback">
+            <div class="callback__title">
+              <img src="_blocks\callback\callback.svg" alt="phone icon"> Заказать звонок
+            </div>
+            <input type="text" name="callback__input" class="callback__input">
+            <div class="callback__error"></div>
+            <input type="submit" name="callback__confirm-button" value="Заказать" class="callback__confirm-button">
+          </form>
+
+          <div class="phone__schedule">Работаем каждый день <br> с 10:00 до 21:30</div>
+        </div>
+        <!-- Basket -->
+        <div class="header__basket basket">
+          <a href=""><img src="_blocks/basket/basket-image.png" alt="basket image"></a>
+          <div class="basket__content">
+            <div class="basket__title"><a href="">Корзина</a></div>
+            Заказанных блюд: <span class="basket__dishes-amount">2</span> Стоимость: <span class="basket__price">216 грн</span>
+          </div>
+        </div>
+        <!-- Navigation menu -->
+        <ul class="header__navigation navigation-horizontal">
+          <li class="navigation-horizontal__item navigation-horizontal__item--is-active"><a href="">Главаня</a></li>
+          <li class="navigation-horizontal__item"><a href="">Как заказать</a></li>
+          <li class="navigation-horizontal__item"><a href="">Бонусы</a></li>
+          <li class="navigation-horizontal__item"><a href="">Каталог товаров</a></li>
+          <li class="navigation-horizontal__item"><a href="">Новости</a></li>
+          <li class="navigation-horizontal__item"><a href="">Статьи</a></li>
+        </ul>
+      </div>
+
+
+      <div class="header__shadow"></div>
+      <div class="header__content">
+        <!-- Choose menu -->
+        <div class="header__choose-menu choose-menu">
+          <div class="choose-menu__element">
+            <img src="_blocks/choose-menu/select-city-icon.png" alt="map marker icon">
+            <div class="choose-menu__title">Город</div>
+            <select class="choose-menu__select" name="select-city">
+                <option>Выбрать</option>
+                <option>Город</option>
+                <option>Город</option>
+                <option>Город</option>
+                <option>Город</option>
+                <option>Город</option>
+              </select>
+          </div>
+
+          <div class="choose-menu__element">
+            <img src="_blocks/choose-menu/select-category-icon.png" alt="tablet icon">
+            <div class="choose-menu__title">Категория</div>
+            <select class="choose-menu__select" name="select-category">
+                <option>Все</option>
+                <option>Категория</option>
+                <option>Категория</option>
+                <option>Категория</option>
+                <option>Категория</option>
+                <option>Категория</option>
+              </select>
+          </div>
+
+          <div class="choose-menu__element">
+            <img src="_blocks/choose-menu/select-institution-icon.png" alt="spoon and fork icon">
+            <div class="choose-menu__title">Заведение</div>
+            <select class="choose-menu__select" name="select-institution">
+                <option>Выбрать</option>
+                <option>Заведение</option>
+                <option>Заведение</option>
+                <option>Заведение</option>
+                <option>Заведение</option>
+                <option>Заведение</option>
+              </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="header__shadow"></div>
+    </header>
+
+    <!-- Main content -->
+    <div class="holder">
+      <!-- Main content title -->
+      <div class="main-content-title">
+        Поиск ресторана в Херсоне
+      </div>
+      <!-- Main content and aside menu -->
+      <div class="main-and-aside">
+        <!-- Aside menu -->
+        <aside class="aside">
+          <!-- Hot -->
+          <div class="hot">
+            <a href="">
+                <img src="_blocks/hot/hot-image.png" alt="hot deal image" class="hot__image">
+              </a>
+          </div>
+          <!-- Best deals -->
+          <div class="aside__best-deals best-deals">
+            <div class="best-deals__title">
+              Лучшие предложения
+            </div>
+            <!-- Element -->
+            <div class="best-deals__element">
+              <div class="best-deals__image">
+                <img src="_blocks\best-deals\best-deals-first-dish.png" alt="dish">
+              </div>
+              <a href="" class="best-deals__dish-name">
+                  Баранина по-турецки
+                </a>
+              <a href="" class="best-deals__restaurant-name">
+                  Diligence
+                </a>
+              <div class="best-deals__price">
+                156.00 <span>грн</span>
+              </div>
+              <button type="button" name="best-deal__button" class="best-deals__button">В КОРЗИНУ</button>
+            </div>
+            <!-- Element -->
+            <div class="best-deals__element">
+              <div class="best-deals__image">
+                <img src="_blocks\best-deals\best-deals-second-dish.png" alt="dish">
+              </div>
+              <a href="" class="best-deals__dish-name">
+                  Кавказский пир
+                </a>
+              <a href="" class="best-deals__restaurant-name">
+                  Zefir Fashion cafe
+                </a>
+              <div class="best-deals__price">
+                156.00 <span>грн</span>
+              </div>
+              <button type="button" name="best-deal__button" class="best-deals__button">В КОРЗИНУ</button>
+            </div>
+          </div>
+          <!-- Description -->
+          <div class="aside__description description">
+            <div class="description__title">Больше, чем доставка еды.</div>
+            <div class="description__text">
+              <p>
+                На нашем сайте Вы можете заказать доставку еды на дом или в офис. Для этого Вам нужно выбрать понравившийся ресторан из списка и ознакомиться с его меню. Прежде чем делать заказ еды, убедитесь, что у ресторана есть доставка по Вашему району. В случае
+                если у Вас возникли проблемы с заказом еды, позвоните, и наши операторы помогут Вам сделать заказ. Доставка еды производится круглосуточно.
+              </p>
+
+              <p>
+                Все рестораны, размещенные на нашем сайте, представили на Ваш выбор свои меню. Для того чтобы сформировать заказ на еду, кликните на название ресторана или на ссылку "перейти в меню". Определившись с выбором еды, Вы можете позвонить по телефону или сделать
+                заказ через интернет. Во втором случае наш менеджер свяжется с Вами, чтобы уточнить условия доставки и подтвердить Ваш заказ.
+              </p>
+
+              <p>
+                Если Вы не нашли ресторан, который Вы видели в прошлый раз, не огорчайтесь, значит, он просто не доставляет еду в данное время. Вы можете заказать доставку еды из другого ресторана или уточнить у наших операторов время работы нужного Вам ресторана. Благодаря
+                нашему сервису Единой Системы Заказа Reserved Вы можете найти ближайшие рестораны к Вашему дому или офису, доставка из которых будет осуществлена в самый короткий срок.
+              </p>
+            </div>
+          </div>
+        </aside>
+        <!--Search-result -->
+        <div class="search-result">
+          <!-- Filter and change view -->
+          <div class="search-result__filter-change-view">
+            <!-- Filter -->
+            <ul class="filter">
+              <div class="filter__caption">Показать:</div>
+              <li class="filter__item filter__item--is-active"><a href="">Все</a></li>
+              <li class="filter__item"><a href="">Открытые</a></li>
+              <li class="filter__item"><a href="">Бесплатные доставки</a></li>
+              <li class="filter__item"><a href="">Акции</a></li>
+              <li class="filter__item"><a href="">Мин. сумма заказа</a></li>
+              <select class="filter__select " name="filter">
+                <option>Все</option>
+                <option>Открытые</option>
+                <option>Беслатные доставки</option>
+                <option>Акции</option>
+                <option>Мин. сумма заказа</option>
+              </select>
+            </ul>
+            <!-- Change view -->
+            <div class="change-view">
+              <div class="change-view__table is-active"></div>
+              <div class="change-view__tile"></div>
+            </div>
+          </div>
+          <!-- Offers -->
+          <div class="search-result__offers-wrapper">
+            <!-- Diligence -->
+            <div class="search-result__offer">
+              <div class="offer offer--best">
+                <div class="offer__image">
+                  <a href=""><img src="_blocks\offer\offer-diligence.jpg" alt="restaurant-"></a>
+                </div>
+                <div class="offer__content">
+                  <a href="" class="offer__title" title="Diligence">Diligence</a>
+                  <ul class="offer__category">
+                    Категория:
+                    <li>&nbsp <a href="">шашлык</a>, &nbsp</li>
+                    <li><a href="">европейская кухня</a>, &nbsp</li>
+                    <li><a href="">украинская кухня</a>, &nbsp</li>
+                    <li><a href="">все кухни мира</a></li>
+                  </ul>
+                  <div class="offer__wrapper">
+                    <div class="offer__min-order-price">
+                      минимальная сумма заказа
+                      <div>50 грн</div>
+                    </div>
+                    <div class="offer__avarage-delivery-time">
+                      среднее время доставки
+                      <div>60 мин</div>
+                    </div>
+                    <div class="offer__rating">
+                      <div class="offer__rating-text">
+                        рейтинг <br> посетителей
+                      </div>
+                      <div class="rating">
+                        <div class="rating__like">
+                          +1365
+                        </div>
+                        <div class="rating__bar"></div>
+                        <div class="rating__dislike">
+                          -26
+                        </div>
+                      </div>
+                    </div>
+                    <div class="offer__opened">
+                      10:00-23:00
+                      <span>Открыто</span>
+                    </div>
+                  </div>
+                  <div class="offer__free-delivery offer__free-delivery--white">
+                    <span class="offer__bonus">
+                        Бонус ресторана 5%.
+                      </span> Бесплатная доставка по Херсону при заказе от 150 грн.
+                  </div>
+                </div>
+                <div class="offer__flags">
+                  <img src="_blocks/offer/offer-stock.png" alt="flag">
+                  <img src="_blocks/offer/offer-gift.png" alt="flag">
+                </div>
+              </div>
+            </div>
+            <!-- Naomi -->
+            <div class="search-result__offer">
+              <div class="offer offer--best">
+                <div class="offer__image">
+                  <a href=""><img src="_blocks\offer\offer-naomi.jpg" alt="restaurant-"></a>
+                </div>
+                <div class="offer__content">
+                  <a href="" class="offer__title" title="NAOMI">NAOMI</a>
+                  <ul class="offer__category">
+                    Категория:
+                    <li>&nbsp <a href="">шашлык</a>, &nbsp</li>
+                    <li><a href="">европейская кухня</a>, &nbsp</li>
+                    <li><a href="">украинская кухня</a>, &nbsp</li>
+                    <li><a href="">все кухни мира</a></li>
+                  </ul>
+                  <div class="offer__wrapper">
+                    <div class="offer__min-order-price">
+                      минимальная сумма заказа
+                      <div>50 грн</div>
+                    </div>
+                    <div class="offer__avarage-delivery-time">
+                      среднее время доставки
+                      <div>60 мин</div>
+                    </div>
+                    <div class="offer__rating">
+                      <div class="offer__rating-text">
+                        рейтинг <br> посетителей
+                      </div>
+                      <div class="rating">
+                        <div class="rating__like">
+                          +1365
+                        </div>
+                        <div class="rating__bar"></div>
+                        <div class="rating__dislike">
+                          -26
+                        </div>
+                      </div>
+                    </div>
+                    <div class="offer__opened">
+                      10:00-23:00
+                      <span>Открыто</span>
+                    </div>
+                  </div>
+                  <div class="offer__free-delivery offer__free-delivery--white">
+                    Бесплатная доставка по Херсону при заказе от 150 грн.
+                  </div>
+                </div>
+                <div class="offer__flags">
+                <img src="_blocks/offer/offer-stock.png" alt="flag">
+                <img src="_blocks/offer/offer-gift.png" alt="flag">
+              </div>
+              </div>
+            </div>
+            <!-- Tiramisu -->
+            <div class="search-result__offer">
+              <div class="offer">
+                <div class="offer__image">
+                  <a href=""><img src="_blocks\offer\offer-tiramisu.jpg" alt="restaurant-"></a>
+                </div>
+                <div class="offer__content">
+                  <a href="" class="offer__title" title="Тирамису">Тирамису</a>
+                  <ul class="offer__category">
+                    Категория:
+                    <li>&nbsp <a href="">шашлык</a>, &nbsp</li>
+                    <li><a href="">европейская кухня</a>, &nbsp</li>
+                    <li><a href="">украинская кухня</a>, &nbsp</li>
+                    <li><a href="">все кухни мира</a></li>
+                  </ul>
+                  <div class="offer__wrapper">
+                    <div class="offer__min-order-price">
+                      минимальная сумма заказа
+                      <div>50 грн</div>
+                    </div>
+                    <div class="offer__avarage-delivery-time">
+                      среднее время доставки
+                      <div>60 мин</div>
+                    </div>
+                    <div class="offer__rating">
+                      <div class="offer__rating-text">
+                        рейтинг <br> посетителей
+                      </div>
+                      <div class="rating">
+                        <div class="rating__like">
+                          +1365
+                        </div>
+                        <div class="rating__bar"></div>
+                        <div class="rating__dislike">
+                          -26
+                        </div>
+                      </div>
+                    </div>
+                    <div class="offer__opened">
+                      10:00-23:00
+                      <span>Открыто</span>
+                    </div>
+                  </div>
+                  <div class="offer__free-delivery">
+                    Бесплатная доставка по Херсону при заказе от 150 грн.
+                  </div>
+                </div>
+                <div class="offer__flags">
+                <img src="_blocks/offer/offer-stock.png" alt="flag">
+                <img src="_blocks/offer/offer-gift.png" alt="flag">
+              </div>
+              </div>
+            </div>
+            <!-- Botanique -->
+            <div class="search-result__offer">
+              <div class="offer">
+                <div class="offer__image">
+                  <a href=""><img src="_blocks\offer\offer-botanique.jpg" alt="restaurant"></a>
+                </div>
+                <div class="offer__content">
+                  <a href="" class="offer__title" title="Botanique">Botanique</a>
+                  <ul class="offer__category">
+                    Категория:
+                    <li>&nbsp <a href="">шашлык</a>, &nbsp</li>
+                    <li><a href="">европейская кухня</a>, &nbsp</li>
+                    <li><a href="">украинская кухня</a>, &nbsp</li>
+                    <li><a href="">все кухни мира</a></li>
+                  </ul>
+                  <div class="offer__wrapper">
+                    <div class="offer__min-order-price">
+                      минимальная сумма заказа
+                      <div>50 грн</div>
+                    </div>
+                    <div class="offer__avarage-delivery-time">
+                      среднее время доставки
+                      <div>60 мин</div>
+                    </div>
+                    <div class="offer__rating">
+                      <div class="offer__rating-text">
+                        рейтинг <br> посетителей
+                      </div>
+                      <div class="rating">
+                        <div class="rating__like">
+                          +1365
+                        </div>
+                        <div class="rating__bar"></div>
+                        <div class="rating__dislike">
+                          -26
+                        </div>
+                      </div>
+                    </div>
+                    <div class="offer__opened">
+                      10:00-23:00
+                      <span>Открыто</span>
+                    </div>
+                  </div>
+                  <div class="offer__free-delivery">
+                    Бесплатная доставка по Херсону при заказе от 150 грн.
+                  </div>
+                </div>
+                <div class="offer__flags">
+                <img src="_blocks/offer/offer-gift.png" alt="flag">
+              </div>
+              </div>
+            </div>
+            <!-- Zefir fashion caffe -->
+            <div class="search-result__offer">
+              <div class="offer">
+                <div class="offer__image">
+                  <a href=""></a>
+                </div>
+                <div class="offer__content">
+                  <a href="" class="offer__title" title="Zefir Fashion caffe">Zefir Fashion caffe</a>
+                  <ul class="offer__category">
+                    Категория:
+                    <li>&nbsp <a href="">шашлык</a>, &nbsp</li>
+                    <li><a href="">европейская кухня</a>, &nbsp</li>
+                    <li><a href="">украинская кухня</a>, &nbsp</li>
+                    <li><a href="">все кухни мира</a></li>
+                  </ul>
+                  <div class="offer__wrapper">
+                    <div class="offer__min-order-price">
+                      минимальная сумма заказа
+                      <div>50 грн</div>
+                    </div>
+                    <div class="offer__avarage-delivery-time">
+                      среднее время доставки
+                      <div>60 мин</div>
+                    </div>
+                    <div class="offer__rating">
+                      <div class="offer__rating-text">
+                        рейтинг <br> посетителей
+                      </div>
+                      <div class="rating">
+                        <div class="rating__like">
+                          +1365
+                        </div>
+                        <div class="rating__bar"></div>
+                        <div class="rating__dislike">
+                          -26
+                        </div>
+                      </div>
+                    </div>
+                    <div class="offer__opened">
+                      10:00-23:00
+                      <span>Открыто</span>
+                    </div>
+                  </div>
+                  <div class="offer__free-delivery">
+                    Бесплатная доставка по Херсону при заказе от 150 грн.
+                  </div>
+                </div>
+                <div class="offer__flags">
+                <img src="_blocks/offer/offer-new.png" alt="flag">
+              </div>
+              </div>
+            </div>
+            <!-- Aeromagic -->
+            <div class="search-result__offer">
+              <div class="offer">
+                <div class="offer__image">
+                  <a href=""><img src="_blocks\offer\offer-aeromagic.jpg" alt="restaurant"></a>
+                </div>
+                <div class="offer__content">
+                  <a href="" class="offer__title" title="Надувные шары Aeromagic">Надувные шары Aeromagic</a>
+                  <div class="offer__wrapper">
+                    <div class="offer__min-order-price">
+                      минимальная сумма заказа
+                      <div>50 грн</div>
+                    </div>
+                    <div class="offer__avarage-delivery-time">
+                      среднее время доставки
+                      <div>60 мин</div>
+                    </div>
+                    <div class="offer__rating">
+                      <div class="offer__rating-text">
+                        рейтинг <br> посетителей
+                      </div>
+                      <div class="rating">
+                        <div class="rating__like">
+                          +1365
+                        </div>
+                        <div class="rating__bar"></div>
+                        <div class="rating__dislike">
+                          -26
+                        </div>
+                      </div>
+                    </div>
+                    <div class="offer__opened">
+                      10:00-23:00
+                      <span>Открыто</span>
+                    </div>
+                  </div>
+                  <div class="offer__free-delivery">
+                    Бесплатная доставка по Херсону при заказе от 150 грн.
+                  </div>
+                </div>
+                <div class="offer__flags">
+                <img src="_blocks/offer/offer-new.png" alt="flag">
+              </div>
+              </div>
+            </div>
+            <!-- City pizza -->
+            <div class="search-result__offer">
+              <div class="offer">
+                <div class="offer__image">
+                  <a href=""><img src="_blocks\offer\offer-pizza.jpg" alt="restaurant"></a>
+                </div>
+                <div class="offer__content">
+                  <a href="" class="offer__title" title="Сити Пицца">Сити Пицца</a>
+                  <ul class="offer__category">
+                    Категория:
+                    <li>&nbsp <a href="">пицца</a></li>
+                  </ul>
+                  <div class="offer__wrapper">
+                    <div class="offer__min-order-price">
+                      минимальная сумма заказа
+                      <div>50 грн</div>
+                    </div>
+                    <div class="offer__avarage-delivery-time">
+                      среднее время доставки
+                      <div>60 мин</div>
+                    </div>
+                    <div class="offer__rating">
+                      <div class="offer__rating-text">
+                        рейтинг <br> посетителей
+                      </div>
+                      <div class="rating">
+                        <div class="rating__like">
+                          +1365
+                        </div>
+                        <div class="rating__bar"></div>
+                        <div class="rating__dislike">
+                          -26
+                        </div>
+                      </div>
+                    </div>
+                    <div class="offer__opened">
+                      10:00-23:00
+                      <span>Открыто</span>
+                    </div>
+                  </div>
+                  <div class="offer__free-delivery">
+                    Бесплатная доставка по Херсону при заказе от 150 грн.
+                  </div>
+                </div>
+                <div class="offer__flags">
+                <img src="_blocks/offer/offer-new.png" alt="flag">
+              </div>
+              </div>
+            </div>
+            <!-- Empty -->
+            <div class="search-result__empty"></div>
+            <div class="search-result__empty"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="footer__logo">
+          <img src="_blocks/footer/footer-reserved-logo.png" alt="Reserved">
+          © 2013 Reserved <br>
+          Все права защищены
+        </div>
+        <div class="footer__separator"></div>
+        <div class="footer__navigation">
+          <ul>
+            <li><a href=" ">Главная</a></li>
+            <li><a href=" ">О нас</a></li>
+            <li><a href=" ">Пресса о нас</a></li>
+            <li><a href=" ">Новости</a></li>
+            <li><a href=" ">Статьи</a></li>
+          </ul>
+
+          <ul>
+            <li><a href=" ">Бонусы</a></li>
+            <li><a href=" ">Партнеры</a></li>
+            <li><a href=" ">Корпоративным <br> клиентам</a></li>
+            <li><a href=" ">Сотрудничество</a></li>
+          </ul>
+
+          <ul>
+            <li><a href=" ">Каталог товаров</a></li>
+            <li><a href=" ">Как заказать</a></li>
+            <li><a href=" ">Соглашение </a></li>
+            <li><a href=" ">Отзывы</a></li>
+          </ul>
+        </div>
+        <div class="footer__separator footer__separator--last"></div>
+        <div class="footer__social-and-wezom">
+          <div class="social">
+            Мы в соцсетях
+            <div class="social__icons">
+              <img src="_blocks/social/social-facebook.png" alt="social icon">
+              <img src="_blocks/social/social-twitter.png" alt="social icon">
+              <img src="_blocks/social/social-odnoklassniki.png" alt="social icon">
+              <img src="_blocks/social/social-vk.png" alt="social icon">
+            </div>
+          </div>
+          <div class="wezom">
+          <div class="wezom__content">
+            Разработка сайта –<br>
+            <a href="">web-студия Wezom</a>
+          </div>
+          <img src="_blocks/wezom/wezom-logo.png" alt="wezom logo">
+        </div>
+        </div>
+      </div>
+    </footer>
+
+
+  </div>
+  <!-- Mobile menu -->
+  <nav id="mobile-menu" class="mobile-menu">
+    <ul class="mobile-menu__content">
+      <li class="search-authentication search-authentication--mmenu">
+        <form class="search-authentication__search-box search-authentication__search-box--mmenu">
+          <input type="search" name="search-field" placeholder="Поиск" class="search-authentication__search-field search-authentication__search-field--mmenu">
+          <input type="submit" name="search-submit" value="" class="search-authentication__search-submit">
+        </form>
+
+        <form class="search-authentication__authentication-box search-authentication__authentication-box--mmenu">
+          <!-- Login -->
+          <p class="search-authentication__login-box search-authentication__login-box--mmenu">
+            <img src="_blocks/search-authentication/login-icon.png" alt="login">
+            <a href="#login-form" class="search-authentication__authentication-text search-authentication__login">Вход</a>
+          </p>
+          <!-- Registration -->
+          <p class="search-authentication__reg-box">
+            <img src="_blocks/search-authentication/reg-icon.png" alt="login">
+            <a href="#reg-form" class="search-authentication__authentication-text search-authentication__reg">Регистрация</a>
+          </p>
+        </form>
+      </li>
+      <li><a href="">Главная</a></li>
+      <li><a href="">Как заказать</a></li>
+      <li><a href="">Бонусы</a></li>
+      <li><a href="">Каталог товаров</a></li>
+      <li><a href="">Новости</a></li>
+      <li><a href="">Статьи</a></li>
+      <li><a href="">Ещё</a>
+        <ul>
+          <li><a href="">Партнеры</a></li>
+          <li><a href="">Корпоративным клиентам</a></li>
+          <li><a href="">Сотрудничество</a></li>
+          <li><a href="">Соглашение</a></li>
+          <li><a href="">Отзывы</a></li>
+          <li><a href="">О нас</a></li>
+          <li><a href="">Пресса о нас</a></li>
+        </ul>
+      </li>
+      <li class="phone phone--mmenu">
+        <img src="_blocks/phone/phone-icon-white.png" alt="phone icon" class="phone__icon phone__icon--mmenu">
+        <span class="phone__number phone__number--mmenu">050 786-86-86</span>
+        <button href="#callback" type="button" name="button" class="phone__button phone__button--mmenu">
+            <span>Заказать звонок</span>
+          </button>
+        <p class="phone__schedule phone__schedule--mmenu">Работаем каждый день с 10:00 до 21:30</p>
+      </li>
+      <li class="basket basket--mmenu">
+        <a href=""><img src="_blocks/basket/basket-image.png" alt="basket image"></a>
+        <p>
+          Заказанных блюд: <span class="basket__dishes-amount basket__dishes-amount--mmenu">2</span><br>
+          Стоимость: <span class="basket__price basket__price--mmenu">216 грн</span>
+        </p>
+      </li>
+    </ul>
+  </nav>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!--build:js _blocks/main.min.js -->
+  <script src="_blocks/magnific-popup/magnific-popup.js" type="text/javascript"></script>
+  <script src="_blocks/validator/validator.js" type="text/javascript"></script>
+  <script src="_blocks/mmenu/mmenu.js" type="text/javascript"></script>
+  <script src="_blocks/intTelInput/intTelInput.js" type="text/javascript"></script>
+  <script src="_blocks/intTelInput/utils.js" type="text/javascript"></script>
+  <script src="_blocks/login-form/login-form.js" type="text/javascript"></script>
+  <script src="_blocks/reg-form/reg-form.js" type="text/javascript"></script>
+  <script src="_blocks/forgot-password/forgot-password.js" type="text/javascript"></script>
+  <script src="_blocks/phone/phone.js" type="text/javascript"></script>
+  <script src="_blocks/callback/callback.js" type="text/javascript"></script>
+  <script src="_blocks/mobile-menu/mobile-menu.js" type="text/javascript"></script>
+  <script src="_blocks/change-view/change-view.js" type="text/javascript"></script>
+  <!-- endbuild -->
+</body>
+</html>

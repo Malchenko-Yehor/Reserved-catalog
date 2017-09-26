@@ -1,0 +1,21 @@
+.filter-mobile {
+
+
+  &__select {
+    cursor: pointer;
+    font-family: 'Arial', sans-serif;
+    appearance: none;
+    width: 190px;
+    height: 33px;
+    margin-left: 13px;
+    border-radius: 3px;
+    padding-left: 11px;
+    border: 1px solid #eceef0;
+    background-image: url('select-arrow.png');
+    background-repeat: no-repeat;
+    background-position: 96.1% center;
+    font-size: 13px;
+    color: #787c80;
+    font-weight: 400;
+  }
+}

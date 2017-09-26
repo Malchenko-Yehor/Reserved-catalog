@@ -1,0 +1,82 @@
+.filter {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+  align-items: center;
+
+  &__caption {
+    font-family: 'Bliss Pro Bold', sans-serif;
+    color: #044f81;
+    font-size: 0.9375rem;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+
+  &__item {
+    margin-left: 22px;
+
+    a {
+      display: block;
+      color: #787c80;
+      font-size: 0.9375rem;
+      font-weight: 300;
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+
+      &:active {
+        opacity: 0.8;
+      }
+    }
+
+    &--is-active {
+      margin-left: 10px;
+      margin-right: -12px;
+
+      a {
+        padding: 4px 13px;
+        color: white;
+        background-color: #00a1d5;
+        border-radius: 4px;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  &__select {
+    display: none;
+    cursor: pointer;
+    font-family: 'Arial', sans-serif;
+    appearance: none;
+    width: 190px;
+    height: 33px;
+    margin-left: 13px;
+    border-radius: 3px;
+    padding-left: 11px;
+    border: 1px solid #eceef0;
+    background-image: url('select-arrow.png');
+    background-repeat: no-repeat;
+    background-position: 96.1% center;
+    font-size: 13px;
+    color: #787c80;
+    font-weight: 400;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .filter {
+    &__item {
+      display: none;
+    }
+
+    &__select {
+      display: block;
+    }
+  }
+}

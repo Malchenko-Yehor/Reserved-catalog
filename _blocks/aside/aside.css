@@ -1,0 +1,28 @@
+.aside {
+  max-width: 216px;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 12px;
+  margin-right: 50px; }
+  .aside__best-deals {
+    margin-top: 30px; }
+  .aside__description {
+    margin-top: 33px; }
+
+@media only screen and (max-width: 990px) {
+  .aside {
+    display: none; } }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFzaWRlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGlCQUFpQjtFQUNqQixZQUFZO0VBQ1oscUJBQWM7RUFBZCxzQkFBYztFQUFkLHFCQUFjO0VBQWQsY0FBYztFQUNkLDZCQUF1QjtFQUF2Qiw4QkFBdUI7RUFBdkIsK0JBQXVCO01BQXZCLDJCQUF1QjtVQUF2Qix1QkFBdUI7RUFDdkIsMEJBQW9CO0VBQXBCLDRCQUFvQjtNQUFwQix1QkFBb0I7VUFBcEIsb0JBQW9CO0VBQ3BCLGlCQUFpQjtFQUNqQixtQkFBbUIsRUFBRTtFQUNyQjtJQUNFLGlCQUFpQixFQUFFO0VBQ3JCO0lBQ0UsaUJBQWlCLEVBQUU7O0FBRXZCO0VBQ0U7SUFDRSxjQUFjLEVBQUUsRUFBRSIsImZpbGUiOiJhc2lkZS9hc2lkZS5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuYXNpZGUge1xuICBtYXgtd2lkdGg6IDIxNnB4O1xuICB3aWR0aDogMTAwJTtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgbWFyZ2luLXRvcDogMTJweDtcbiAgbWFyZ2luLXJpZ2h0OiA1MHB4OyB9XG4gIC5hc2lkZV9fYmVzdC1kZWFscyB7XG4gICAgbWFyZ2luLXRvcDogMzBweDsgfVxuICAuYXNpZGVfX2Rlc2NyaXB0aW9uIHtcbiAgICBtYXJnaW4tdG9wOiAzM3B4OyB9XG5cbkBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG1heC13aWR0aDogOTkwcHgpIHtcbiAgLmFzaWRlIHtcbiAgICBkaXNwbGF5OiBub25lOyB9IH1cbiJdfQ== */

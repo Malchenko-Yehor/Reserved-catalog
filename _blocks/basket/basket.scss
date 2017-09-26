@@ -1,0 +1,43 @@
+.basket {
+  width: 164px;
+  display: flex;
+  align-items: flex-start;
+
+  &--mmenu {
+    width: 100%;
+    display: flex !important;
+  }
+
+  &__title {
+    a {
+      color: #044f81;
+      font-family: "Bliss Pro bold";
+      font-size: 1rem;
+      font-weight: 400;
+      margin-bottom: 5px;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__content {
+    width: 117px;
+    margin-left: 5px;
+    font-size: 0.875rem;
+    color: #787c80;
+    font-weight: 300;
+  }
+
+  &__dishes-amount,
+  &__price {
+    font-family: "Bliss Pro bold";
+    color: #044f81;
+
+    &--mmenu {
+      color: inherit;
+    }
+  }
+}

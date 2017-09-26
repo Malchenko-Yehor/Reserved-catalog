@@ -1,0 +1,61 @@
+.search-result {
+  width: 100%;
+  margin-top: 12px;
+
+  &__filter-change-view {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__offer {
+    margin-top: 8px;
+  }
+
+  &__empty {
+    min-width: 210px;
+    height: 0;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+  &--tile {
+    .search-result__offers-wrapper {
+      float: left;
+      display: inline-flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .search-result__offer {
+      margin-right: 5px;
+      margin-left: 5px;
+      margin-bottom: 13px;
+
+    }
+
+  }
+
+
+}
+
+@media only screen and (max-width: 800px) {
+  .search-result {
+
+    &__offer {
+      margin-right: 5px;
+      margin-left: 5px;
+      margin-bottom: 13px;
+    }
+
+    &__offers-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+    }
+
+    &__filter-change-view {
+      justify-content: center;
+    }
+  }
+}

@@ -1,0 +1,68 @@
+.mobile-menu {
+  font-family: 'Bliss Pro', sans-serif;
+  background-color: #282c2f;
+
+  &__icon {
+    outline: none;
+    width: 50px;
+    height: 41px;
+    padding: 9px;
+
+    .hamburger-inner {
+      width: 33px;
+      background-color: #044f81;
+
+      &::after,
+      &::before {
+        width: 33px;
+        background-color: #044f81;
+      }
+
+    }
+  }
+
+  &__title {
+    font-family: 'Appetite', sans-serif;
+    color: white;
+    font-size: 40px;
+  }
+
+
+
+// Changing mmenu styles
+  .mm-listview > li > a {
+    padding: 5px 10px 10px 20px;
+  }
+
+  .mm-listview {
+    font-size: 1rem;
+  }
+
+  .mm-navbar {
+    height: auto;
+    border-bottom-color: rgba(255,255,255,.4);
+    border-bottom-width: 2px;
+  }
+
+  li::after {
+     border-bottom-color: rgba(255,255,255,.4);
+  }
+
+  li.phone::after,
+  li.basket::after {
+    display: none;
+  }
+
+  a.mm-next::before {
+    border-left-color: rgba(255,255,255,.4);
+  }
+
+  .mm-title {
+    font-size: 20px;
+  }
+
+}
+
+body {
+  background-color: white;
+}

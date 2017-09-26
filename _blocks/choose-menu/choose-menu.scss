@@ -1,0 +1,58 @@
+.choose-menu {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  &__icon {
+
+  }
+
+  &__element {
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 0 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  &__title {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 8px;
+    color: #044f81;
+    font-family: "Bliss Pro bold";
+    font-size: 1.125rem;
+    font-weight: 400;
+  }
+
+  &__select {
+    cursor: pointer;
+    font-family: 'Arial', sans-serif;
+    appearance: none;
+    width: 190px;
+    height: 33px;
+    margin-left: 13px;
+    border-radius: 3px;
+    padding-left: 11px;
+    border: 1px solid #eceef0;
+    background-image: url('select-arrow.png');
+    background-repeat: no-repeat;
+    background-position: 96.1% center;
+    font-size: 13px;
+    color: #787c80;
+    font-weight: 400;
+  }
+}
+
+
+@media only screen and (max-width: 380px) {
+  .choose-menu__select {
+    margin-left: 40px;
+    margin-right: 40px;
+
+  }
+}

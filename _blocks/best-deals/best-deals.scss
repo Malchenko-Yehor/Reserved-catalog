@@ -1,0 +1,115 @@
+.best-deals {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    color: #044f81;
+    font-size: 1.25rem;
+    font-weight: 400;
+  }
+
+  &__element {
+    max-width: 210px;
+    width: 100%;
+    margin-top: 11px;
+    background-color: white;
+    border: 1px solid #dddfe0;
+    border-radius: 5px;
+    padding: 12px 15px;
+  }
+
+  &__image {
+    display: block;
+    position: relative;
+    border: 1px solid #f0f4f9;
+    border-radius: 2px;
+
+    img {
+      display: block;
+      border-radius: 2px;
+      width: 100%;
+      height: auto;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 31px;
+      height: 34px;
+      right: 2px;
+      bottom: 3px;
+      background-image: url('best-deals-reserved-icon.png');
+      background-repeat: no-repeat;
+
+    }
+  }
+
+  &__dish-name {
+    display: block;
+    margin-top: 9px;
+    font-weight: 300;
+    color: #044f81;
+    font-size: 1rem;
+    text-decoration: none;
+
+    &:hover {
+      color: #056aad;
+    }
+
+    &:active {
+      color: #033d63;
+    }
+  }
+
+  &__restaurant-name {
+    display: block;
+    color: #787c80;
+    font-size: 13px;
+    text-decoration: underline;
+    margin-bottom: 10px;
+
+
+    &:hover {
+      color: #898c90;
+      text-decoration: none;
+    }
+
+    &:active {
+      color: #3e3f42;
+    }
+  }
+
+  &__price {
+    display: inline-block;
+    margin-top: 3px;
+    color: #787c80;
+    font-family: "Bliss Pro";
+    font-size: 20px;
+    font-weight: 400;
+
+    span {
+      font-size: 13px;
+      font-weight: 300;
+    }
+  }
+
+  &__button {
+    display: inline-block;
+    appearance: none;
+    border: none;
+    float: right;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 90px;
+    height: 30px;
+    background: linear-gradient(#00a1d5, #005084);
+    color: #ffffff;
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    &:active {
+      background: linear-gradient(#005084, #00a1d5);
+    }
+  }
+}

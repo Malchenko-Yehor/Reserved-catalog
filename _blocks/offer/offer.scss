@@ -1,0 +1,276 @@
+.offer {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  border: 1px solid #dddfe1;
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px 20px 15px 20px;
+  box-shadow: none;
+  display: flex;
+
+  &:hover {
+    border-color: #004e82;
+    box-shadow: 0 0 0 2px #004e82;
+  }
+
+  &--best {
+    background-color: #f2fff2;
+  }
+
+  &__image {
+    position: relative;
+    min-width: 123px;
+    width: 123px;
+    height: 123px;
+    border: 1px solid #f0f4f9;
+    border-radius: 2px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    img {
+      display: block;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__content {
+    padding-left: 20px;
+    width: 100%;
+  }
+
+  &__wrapper {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  &__title {
+      display: block;
+      margin-top: -5px;
+      color: #044f81;
+      font-size: 1.875rem;
+      font-weight: 300;
+      text-decoration: none;
+
+      &:hover {
+        color: #0679c6;
+      }
+
+      &:active {
+        color: #022d4a;
+      }
+
+  }
+
+  &__category {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    color: #787c80;
+    font-size: 0.8125rem;
+    font-weight: 300;
+
+    a {
+      color: #787c80;
+      font-size: 0.8125rem;
+      font-weight: 300;
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+
+      &:active {
+        color: #4a4d4f;
+      }
+    }
+  }
+
+  &__min-order-price,
+  &__avarage-delivery-time {
+    width: 80px;
+    color: #787c80;
+    font-size: 0.75rem;
+    font-weight: 300;
+
+    div {
+      color: #000000;
+      font-size: 1.375rem;
+      font-weight: 400;
+    }
+  }
+
+  &__rating-text {
+    color: #787c80;
+    font-size: 0.75rem;
+    font-weight: 300;
+    margin-bottom: 5px;
+  }
+
+  &__rating {
+    margin-left: 20px;
+  }
+
+  &__opened {
+    margin-left: auto;
+    position: relative;
+    color: #75b44a;
+    font-size: 1.375rem;
+    font-weight: 400;
+    padding-left: 25px;
+    text-align: right;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 2px;
+      width: 23px;
+      height: 21px;
+      background-image: url('offer-clock.png');
+      background-repeat: no-repeat;
+    }
+
+    span {
+      display: block;
+      color: #787c80;
+      font-size: 1.0625rem;
+      font-weight: 400;
+    }
+  }
+
+  &__free-delivery {
+    padding: 14px;
+    box-shadow: inset 0 0 4px #d2d4d6;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    margin-top: 15px;
+    color: #787c80;
+    font-size: 0.8125rem;
+    font-weight: 300;
+
+    &--white {
+      background-color: white;
+      box-shadow: none;
+    }
+  }
+
+  &__bonus {
+    color: #75b44a;
+  }
+
+  &__flags {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    display: flex;
+    align-items: flex-start;
+  }
+
+}
+
+.offer--tile {
+  max-width: 210px;
+  min-width: 210px;
+  padding: 10px;
+  display: block;
+
+  .offer {
+    &__category,
+    &__min-order-price,
+    &__avarage-delivery-time,
+    &__rating,
+    &__free-delivery,
+    &__flags {
+      display: none;
+    }
+
+    &__image {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &__content {
+      padding-left: 0;
+    }
+
+    &__title {
+      margin-top: 5px;
+      text-align: center;
+      line-height: 1.2;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    &__wrapper {
+      margin-top: 7px;
+    }
+
+    &__opened {
+      text-align: left;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .offer {
+    max-width: 210px;
+    min-width: 210px;
+    padding: 10px;
+    display: block;
+
+    &__category,
+    &__min-order-price,
+    &__avarage-delivery-time,
+    &__rating,
+    &__free-delivery,
+    &__flags {
+      display: none;
+    }
+
+    &__image {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &__content {
+      padding-left: 0;
+    }
+
+    &__title {
+      margin-top: 5px;
+      text-align: center;
+      line-height: 1.2;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    &__wrapper {
+      margin-top: 7px;
+    }
+
+    &__opened {
+      text-align: left;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
